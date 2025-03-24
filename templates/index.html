@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Medical Records and Bioinformatics Database</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #333333;
+      color: #fff;
+    }
+
+    main {
+      padding: 40px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Medical Records and Bioinformatics Database</h1>
+  </header>
+
+  <nav>
+    <a href="{{ url_for('patients') }}">Patients</a>
+    <a href="{{ url_for('doctors') }}">Doctors</a>
+    <a href="{{ url_for('bioinformatics')}}">Bioinformatics</a>
+    <a href="appointments.html">Appointments</a>
+    <a href="medical_records.html">Medical Records</a>
+  </nav>
+
+  <main>
+    <h2>Welcome to the Medical Records and Bioinformatics Database. Here you can access and manage information related to patients, doctors, appointments, medical records, and bioinformatics data.</h2>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Medical Records and Bioinformatics Database. All rights reserved.</p>
+  </footer>
+</body>
+</html>
